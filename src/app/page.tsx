@@ -62,8 +62,6 @@ function Section({
 }
 
 export default function HomePage() {
-  const year = new Date().getFullYear();
-
   return (
     <main className="page-shell" id="main-content">
       <header className="site-header">
@@ -340,9 +338,7 @@ export default function HomePage() {
       </Section>
 
       <footer className="site-footer">
-        <p>
-          &copy; {year} {siteConfig.companyName}
-        </p>
+        <p>Lidtech AB</p>
         <div className="footer-links">
           {siteConfig.socials.map((link) => (
             <a href={link.href} key={link.label} rel="noreferrer" target="_blank">

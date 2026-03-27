@@ -165,7 +165,7 @@ export const siteConfig: SiteConfig = {
   location: "Stockholm, Sweden",
   email: "oskarlidstrom@gmail.com",
   url: "https://kartdev.github.io/Lidtech-website",
-  bookingUrl: "https://cal.com/replace-with-your-booking-link/discovery-call",
+  bookingUrl: "https://calendly.com/oskarlidstrom/introduction-meeting",
   meta: {
     title: "Senior Cloud Architecture and DevOps Consulting for Startup Founders",
     description:
@@ -178,7 +178,7 @@ export const siteConfig: SiteConfig = {
       "I help startup founders move from technical friction to clean execution across AWS, Azure, CI/CD, backend workflows, and platform foundations, with senior hands-on involvement from the first conversation to the final handover.",
     primaryCta: {
       label: "Book a call",
-      href: "https://cal.com/replace-with-your-booking-link/discovery-call",
+      href: "https://calendly.com/oskarlidstrom/introduction-meeting",
     },
     secondaryCta: {
       label: "See selected proof",

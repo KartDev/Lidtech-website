@@ -107,7 +107,7 @@ a {
   top: 1rem;
   z-index: 20;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.65fr) auto;
+  grid-template-columns: minmax(0, 1.3fr) auto auto;
   gap: 1rem;
   align-items: center;
   padding: 0.95rem 1.1rem;
@@ -119,10 +119,16 @@ a {
   box-shadow: 0 16px 38px rgba(22, 31, 29, 0.08);
 }
 
+.brand-block,
+.nav-strip {
+  min-width: 0;
+}
+
 .brand-mark {
   display: inline-flex;
   align-items: center;
   gap: 0.9rem;
+  width: 100%;
   min-width: 0;
 }
 
@@ -154,14 +160,13 @@ a {
 .brand-mark-copy span {
   color: var(--foreground-muted);
   font-size: 0.79rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  max-width: 34ch;
+  line-height: 1.25;
 }
 
 .nav-strip {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 0.4rem;
   flex-wrap: wrap;
 }
@@ -833,8 +838,21 @@ h3 {
   }
 }
 
+@media (max-width: 1200px) {
+  .site-header {
+    grid-template-columns: 1fr;
+    border-radius: 32px;
+    padding: 1rem;
+  }
+
+  .nav-strip {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.15rem;
+  }
+}
+
 @media (max-width: 1080px) {
-  .site-header,
   .hero-section,
   .stats-grid,
   .card-grid-services,
@@ -844,17 +862,6 @@ h3 {
   .contact-layout,
   .about-layout {
     grid-template-columns: 1fr;
-  }
-
-  .site-header {
-    border-radius: 32px;
-    padding: 1rem;
-  }
-
-  .nav-strip {
-    justify-content: flex-start;
-    overflow-x: auto;
-    padding-bottom: 0.15rem;
   }
 
   .cta-actions {
