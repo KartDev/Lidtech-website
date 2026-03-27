@@ -338,7 +338,7 @@ export default function HomePage() {
       </Section>
 
       <footer className="site-footer">
-        <p>Lidtech AB</p>
+        <p>&copy; 2026 Lidtech AB</p>
         <div className="footer-links">
           {siteConfig.socials.map((link) => (
             <a href={link.href} key={link.label} rel="noreferrer" target="_blank">
