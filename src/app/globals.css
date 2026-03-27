@@ -377,6 +377,31 @@ h3 {
   color: rgba(255, 248, 240, 0.92);
 }
 
+.hero-panel-intro {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-portrait-frame {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 19rem;
+  padding: 1.4rem 1rem 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: calc(var(--radius-lg) - 2px);
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.18), transparent 58%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+}
+
+.hero-portrait-image {
+  width: min(100%, 18rem);
+  height: auto;
+  filter: drop-shadow(0 18px 32px rgba(8, 16, 16, 0.34));
+}
+
 .hero-panel-label,
 .proof-context,
 .contact-label,
@@ -910,6 +935,15 @@ h3 {
   .about-copy p,
   .contact-text {
     font-size: 1rem;
+  }
+
+  .hero-portrait-frame {
+    min-height: 15rem;
+    padding-top: 1rem;
+  }
+
+  .hero-portrait-image {
+    width: min(100%, 14rem);
   }
 
   .button {

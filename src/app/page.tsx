@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 import { siteConfig } from "@/content/site";
@@ -114,7 +115,19 @@ export default function HomePage() {
         </div>
 
         <aside className="hero-panel reveal reveal-delay-2">
-          <p className="hero-panel-label">What founders bring me in for</p>
+          <div className="hero-panel-intro">
+            <div className="hero-portrait-frame">
+              <Image
+                alt={siteConfig.personName}
+                className="hero-portrait-image"
+                height={512}
+                priority
+                src="/oskar-lidstrom-portrait.png"
+                width={517}
+              />
+            </div>
+            <p className="hero-panel-label">What founders bring me in for</p>
+          </div>
           <ul className="hero-panel-list">
             <li>Untangling slow delivery and fragile release flows</li>
             <li>Building clean AWS or Azure foundations before growth compounds complexity</li>
