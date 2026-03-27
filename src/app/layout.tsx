@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     images: ["/og-image.svg"],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: new URL("favicon.svg", `${siteConfig.url}/`).toString(),
   },
 };
 

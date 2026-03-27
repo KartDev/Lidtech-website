@@ -164,7 +164,7 @@ export const siteConfig: SiteConfig = {
   role: "Senior Cloud Architect, DevOps Engineer, and Platform Consultant",
   location: "Stockholm, Sweden",
   email: "oskarlidstrom@gmail.com",
-  url: "https://replace-with-your-domain.com",
+  url: "https://kartdev.github.io/Lidtech-website",
   bookingUrl: "https://cal.com/replace-with-your-booking-link/discovery-call",
   meta: {
     title: "Senior Cloud Architecture and DevOps Consulting for Startup Founders",
