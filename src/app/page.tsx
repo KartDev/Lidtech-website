@@ -1,4 +1,3 @@
-import Image from "next/image";
 import type { ReactNode } from "react";
 
 import { siteConfig } from "@/content/site";
@@ -63,6 +62,8 @@ function Section({
 }
 
 export default function HomePage() {
+  const portraitUrl = new URL("oskar-lidstrom-portrait.png", `${siteConfig.url}/`).toString();
+
   return (
     <main className="page-shell" id="main-content">
       <header className="site-header">
@@ -117,12 +118,14 @@ export default function HomePage() {
         <aside className="hero-panel reveal reveal-delay-2">
           <div className="hero-panel-intro">
             <div className="hero-portrait-frame">
-              <Image
+              {/* next/image emitted a root-relative path in the static export, so use a plain img here. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 alt={siteConfig.personName}
                 className="hero-portrait-image"
                 height={512}
-                priority
-                src="/oskar-lidstrom-portrait.png"
+                fetchPriority="high"
+                src={portraitUrl}
                 width={517}
               />
             </div>
