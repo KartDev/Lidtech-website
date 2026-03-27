@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Oskar Lidstrom Consulting">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f1ea" />
+      <stop offset="55%" stop-color="#efe7de" />
+      <stop offset="100%" stop-color="#ece4da" />
+    </linearGradient>
+    <radialGradient id="flare" cx="78%" cy="18%" r="45%">
+      <stop offset="0%" stop-color="#0e6d73" stop-opacity="0.24" />
+      <stop offset="100%" stop-color="#0e6d73" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#flare)" />
+  <rect x="60" y="60" width="1080" height="510" rx="36" fill="rgba(255,255,255,0.58)" stroke="rgba(23,32,29,0.1)" />
+  <text x="110" y="156" font-family="Arial, sans-serif" font-size="22" letter-spacing="4" fill="#10454a">OSKAR LIDSTROM CONSULTING</text>
+  <text x="110" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="74" fill="#17201d">Cloud architecture and delivery</text>
+  <text x="110" y="372" font-family="Georgia, 'Times New Roman', serif" font-size="74" fill="#17201d">for fast-moving startup teams.</text>
+  <text x="110" y="446" font-family="Arial, sans-serif" font-size="28" fill="rgba(23,32,29,0.72)">
+    Senior AWS, Azure, DevOps, platform engineering, and backend automation consulting.
+  </text>
+  <g transform="translate(864 96)">
+    <circle cx="140" cy="140" r="106" fill="none" stroke="#0e6d73" stroke-width="8" opacity="0.54" />
+    <circle cx="140" cy="140" r="72" fill="rgba(14,109,115,0.1)" />
+    <text x="140" y="164" font-family="Georgia, 'Times New Roman', serif" font-size="92" text-anchor="middle" fill="#17201d">OL</text>
+  </g>
+</svg>
