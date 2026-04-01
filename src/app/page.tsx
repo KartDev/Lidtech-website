@@ -85,7 +85,7 @@ export default function HomePage() {
           ))}
         </nav>
 
-        <ActionButton href={siteConfig.bookingUrl} label="Book a call" variant="ghost" />
+        <ActionButton href={siteConfig.bookingUrl} label="Book an Intro Call" variant="ghost" />
       </header>
 
       <section className="hero-section" id="top">
@@ -129,13 +129,13 @@ export default function HomePage() {
                 width={517}
               />
             </div>
-            <p className="hero-panel-label">What founders bring me in for</p>
+            <p className="hero-panel-label">What Lidtech AB helps with</p>
           </div>
           <ul className="hero-panel-list">
-            <li>Untangling slow delivery and fragile release flows</li>
-            <li>Building clean AWS or Azure foundations before growth compounds complexity</li>
-            <li>Designing serverless backends and integrations that stay operable in production</li>
-            <li>Adding structure, governance, and observability without slowing the team down</li>
+            <li>Creating stronger cloud structure and governance</li>
+            <li>Improving platform foundations and engineering workflows</li>
+            <li>Strengthening DevOps and CI/CD delivery capability</li>
+            <li>Implementing Infrastructure as Code for repeatable operations</li>
           </ul>
 
           <div className="hero-panel-foot">
@@ -157,8 +157,8 @@ export default function HomePage() {
       <Section
         id="services"
         eyebrow="Services"
-        title="Focused offers for startup teams that need senior technical leverage."
-        description="The work is scoped to make meaningful technical progress quickly, whether that means cleaning up foundations, accelerating delivery, or building the backend layer behind ambitious product bets."
+        title="Services overview for modern cloud and platform capabilities."
+        description="Lidtech AB helps organizations design, improve, and operate cloud and platform systems that are clear, repeatable, secure, scalable, and maintainable."
       >
         <div className="card-grid card-grid-services">
           {siteConfig.services.map((service, index) => (
@@ -185,9 +185,9 @@ export default function HomePage() {
 
       <Section
         id="why"
-        eyebrow="Why Work With Me"
-        title="The value is senior execution that balances speed, structure, and technical judgment."
-        description="This is not a generic consulting layer. The work combines architecture, delivery, and real implementation experience from demanding environments, adapted for teams that need momentum."
+        eyebrow="Why Lidtech AB"
+        title="Practical specialist support built for long-term technical value."
+        description="Lidtech AB focuses on engineering-first outcomes that improve delivery capability, cloud structure, and technical quality without unnecessary complexity."
         tone="muted"
       >
         <div className="card-grid card-grid-value">
@@ -206,9 +206,9 @@ export default function HomePage() {
 
       <Section
         id="proof"
-        eyebrow="Selected Proof"
-        title="Enterprise-grade delivery experience translated into practical outcomes."
-        description="The background comes from real assignments across public sector, automotive, manufacturing, retail, and consulting environments. That experience shows up in the systems design, not just the resume."
+        eyebrow="Engagement Formats"
+        title="Start focused and expand only where it creates real value."
+        description="Lidtech AB typically works through advisory workshops, fixed-scope projects, architecture and platform reviews, and retained advisory support."
       >
         <div className="card-grid card-grid-proof">
           {siteConfig.proof.map((item, index) => (
@@ -228,8 +228,8 @@ export default function HomePage() {
       <Section
         id="about"
         eyebrow="About"
-        title="A solo consulting partner with cloud depth, delivery discipline, and a bias toward practical work."
-        description="The consulting approach is shaped by platform engineering, DevOps, and architecture work that had to hold up under real operational pressure."
+        title="What Lidtech AB does."
+        description="Lidtech AB helps teams build stronger technical foundations so they can deliver faster, operate more reliably, and scale with less friction."
         tone="muted"
       >
         <div className="about-layout">
@@ -240,19 +240,17 @@ export default function HomePage() {
           </div>
 
           <aside className="credentials-card reveal reveal-delay-1">
-            <p className="credentials-label">Credentials snapshot</p>
-            <h3>{siteConfig.role}</h3>
+            <p className="credentials-label">Ideal clients</p>
+            <h3>Organizations that value practical technical progress</h3>
             <ul className="credentials-list">
-              <li>AWS Certified DevOps Engineer - Professional</li>
-              <li>AWS Certified Solutions Architect - Professional</li>
-              <li>Microsoft Certified: DevOps Engineer Expert</li>
-              <li>Azure Solutions Architect Expert (AZ-305)</li>
-              <li>Google Cloud Engineer</li>
+              <li>Companies modernizing cloud usage</li>
+              <li>Teams improving delivery and platform maturity</li>
+              <li>Organizations needing better cloud governance</li>
+              <li>Businesses wanting senior support without heavy overhead</li>
+              <li>Engineering teams that prefer practical solutions over consulting theatre</li>
             </ul>
             <p className="credentials-note">
-              Additional delivery background includes Terraform, Bicep, AWS CDK,
-              GitHub Actions, GitLab CI/CD, OpenShift, Kubernetes, Python,
-              PowerShell, and backend integration design.
+              Whether you need a focused review, scoped implementation, or ongoing advisory support, the goal is the same: create better systems that help teams move faster with less friction.
             </p>
           </aside>
         </div>
@@ -260,9 +258,9 @@ export default function HomePage() {
 
       <Section
         id="process"
-        eyebrow="Engagement Process"
-        title="A compact working model designed for clarity and momentum."
-        description="Every engagement should quickly create technical clarity, visible progress, and a clean handover path for the internal team."
+        eyebrow="How Lidtech AB Helps"
+        title="Support designed for stronger structure, delivery, and platform maturity."
+        description="Lidtech AB is designed for organizations that need practical technical guidance with measurable engineering outcomes."
         tone="accent"
       >
         <div className="process-grid">
@@ -283,8 +281,8 @@ export default function HomePage() {
       <Section
         id="faq"
         eyebrow="FAQ"
-        title="Straight answers for teams deciding whether a solo senior consultant is the right fit."
-        description="The best engagements are the ones where scope, expectations, and working style are clear from the outset."
+        title="Common questions before starting an engagement."
+        description="Clear scope and practical collaboration are central to every engagement format."
       >
         <div className="faq-list">
           {siteConfig.faq.map((item) => (
@@ -298,20 +296,18 @@ export default function HomePage() {
 
       <section className="cta-panel reveal">
         <div>
-          <p className="eyebrow">Ready to move faster?</p>
-          <h2>Bring in senior technical help before delivery friction becomes product drag.</h2>
+          <p className="eyebrow">Final CTA</p>
+          <h2>Need support with cloud architecture, platform engineering, DevOps, or Infrastructure as Code?</h2>
           <p className="section-description">
-            If you need sharper cloud foundations, a cleaner delivery system, or a
-            reliable backend path for automation and AI-adjacent product work, we
-            can start with a focused discovery call.
+            Let’s discuss what would be most useful for your team.
           </p>
         </div>
 
         <div className="cta-actions">
-          <ActionButton href={siteConfig.bookingUrl} label="Book a discovery call" />
+          <ActionButton href={siteConfig.bookingUrl} label="Book an Intro Call" />
           <ActionButton
             href={`mailto:${siteConfig.email}`}
-            label="Email directly"
+            label="Get in Touch"
             variant="secondary"
           />
         </div>
@@ -320,8 +316,8 @@ export default function HomePage() {
       <Section
         id="contact"
         eyebrow="Contact"
-        title="Direct, founder-friendly, and easy to reach."
-        description="Use the booking link for a discovery conversation, or reach out directly if you already know the problem you want to solve."
+        title="Direct, practical, and easy to reach."
+        description="Start with an intro conversation or reach out directly for a focused technical review request."
         tone="muted"
       >
         <div className="contact-layout">
@@ -331,8 +327,8 @@ export default function HomePage() {
               {siteConfig.email}
             </a>
             <p className="contact-text">
-              Based in {siteConfig.location}. Available for remote-first consulting
-              and targeted project engagements.
+              Based in {siteConfig.location}. Available for advisory workshops,
+              fixed-scope projects, architecture reviews, and retained advisory support.
             </p>
           </article>
 
