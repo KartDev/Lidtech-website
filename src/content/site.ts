@@ -10,193 +10,226 @@ import type {
 } from "@/lib/types";
 
 const stats: StatItem[] = [
-  { value: "6+ years", label: "Cloud, platform, and DevOps delivery" },
-  { value: "10 certifications", label: "AWS, Azure, and Google Cloud credentials" },
-  { value: "50+ TB", label: "Migration program led for a global retailer" },
-  { value: "AWS + Azure", label: "Hands-on architecture across both platforms" },
+  { value: "Cloud Architecture", label: "Scalable, secure cloud foundations" },
+  { value: "Platform Engineering", label: "Reusable internal platforms and workflows" },
+  { value: "DevOps & CI/CD", label: "Reliable delivery pipelines and release practices" },
+  { value: "Infrastructure as Code", label: "Repeatable, version-controlled infrastructure" },
 ];
 
 const services: ServiceItem[] = [
   {
-    title: "Cloud Architecture and Platform Foundations",
+    title: "Cloud Architecture",
     summary:
-      "Design the cloud baseline, delivery standards, and technical guardrails your team needs before velocity turns into drift.",
+      "Design cloud foundations that are scalable, secure, and aligned with how teams actually work.",
     bullets: [
-      "Landing zones, governance models, and subscription structure",
-      "Platform architecture for AWS, Azure, or hybrid delivery",
-      "Security, operability, and infrastructure-as-code standards from day one",
+      "Cloud foundation and architecture baseline design",
+      "Security and reliability considerations built in early",
+      "Practical architecture aligned to delivery reality",
     ],
-    bestFor: "Founders preparing to scale product, infrastructure, or teams.",
+    bestFor: "Best for organizations modernizing cloud usage and structure.",
   },
   {
-    title: "DevOps and Delivery Acceleration",
+    title: "Platform Engineering",
     summary:
-      "Tighten the path from code to production with practical CI/CD, observability, and release automation that reduce drag on engineering.",
+      "Improve internal platforms, developer workflows, and reusable technical foundations.",
     bullets: [
-      "CI/CD pipelines with GitHub Actions, GitLab CI/CD, or cloud-native tooling",
-      "Observability and operational hygiene for stable releases",
-      "Workflow cleanup, deployment hardening, and platform enablement",
+      "Developer experience and platform capability improvements",
+      "Reusable patterns and standards for engineering teams",
+      "Technical foundations that reduce friction over time",
     ],
-    bestFor: "Teams that need shipping speed without introducing avoidable risk.",
+    bestFor: "Best for teams improving platform maturity and engineering flow.",
   },
   {
-    title: "Backend Automation and AI-Ready Integrations",
+    title: "DevOps & CI/CD",
     summary:
-      "Build the secure backend workflows and integration patterns that make automation, product operations, and AI features dependable in production.",
+      "Build more reliable delivery pipelines and stronger deployment workflows.",
     bullets: [
-      "Serverless backends, APIs, and event-driven workflows",
-      "Operational automations for lifecycle actions, retries, and auditability",
-      "Integration design that keeps product experiments shippable and maintainable",
+      "Pipeline design and implementation for safer releases",
+      "Deployment workflow improvements and operational reliability",
+      "Delivery practices that support team velocity",
     ],
-    bestFor: "Startups turning product ideas into reliable, production-ready systems.",
+    bestFor: "Best for teams that need better delivery capability.",
+  },
+  {
+    title: "Infrastructure as Code",
+    summary:
+      "Create repeatable, version-controlled infrastructure using tools like Terraform and Bicep.",
+    bullets: [
+      "Infrastructure patterns defined as reusable code",
+      "Version control and reviewable infrastructure changes",
+      "Consistency across environments and teams",
+    ],
+    bestFor: "Best for organizations that need maintainable cloud operations.",
+  },
+  {
+    title: "Cloud Governance",
+    summary:
+      "Improve structure, standards, and cloud operating models without blocking delivery.",
+    bullets: [
+      "Cloud standards and policy alignment",
+      "Governance models that support team autonomy",
+      "Structure that scales with organizational growth",
+    ],
+    bestFor: "Best for organizations needing better cloud governance and clarity.",
+  },
+  {
+    title: "Technical Advisory",
+    summary:
+      "Get senior technical guidance without needing a full-time hire.",
+    bullets: [
+      "Focused architecture and platform reviews",
+      "Decision support for technical direction and trade-offs",
+      "Scoped advisory support for high-value initiatives",
+    ],
+    bestFor: "Best for teams that want specialist support without unnecessary overhead.",
   },
 ];
 
 const valueProps: ValuePropItem[] = [
   {
-    title: "Senior hands-on execution",
+    title: "Practical, engineering-first consulting",
     description:
-      "You work directly with a senior consultant who can design the architecture and implement the important parts, not just hand over slides.",
+      "Lidtech AB focuses on solutions that work in the real world, not just slide decks and abstract recommendations.",
   },
   {
-    title: "Enterprise-grade rigor without enterprise drag",
+    title: "Senior specialist support",
     description:
-      "The delivery style is pragmatic and founder-friendly, but the underlying standards come from real work in government, automotive, manufacturing, and retail environments.",
+      "Get high-value support in cloud, platform, DevOps, and architecture without needing a large consulting setup.",
   },
   {
-    title: "Built for shipping, not just planning",
+    title: "Built for clarity and long-term value",
     description:
-      "The focus is on practical improvements that unblock teams quickly: infrastructure, pipelines, integrations, observability, and the operational details that keep momentum intact.",
+      "The goal is not to add complexity. The goal is to create systems that are easier to understand, easier to operate, and easier to scale.",
   },
 ];
 
 const proof: ProofItem[] = [
   {
-    title: "CAF-aligned Azure governance design",
-    context: "Asurgent AB, 2026",
+    title: "Advisory workshops",
+    context: "Engagement format",
     detail:
-      "Established Azure structure and standards across management groups, subscriptions, tagging, validation rules, and onboarding guidance for future implementations.",
+      "Run focused workshops to clarify architecture choices, delivery constraints, and practical next steps for cloud and platform initiatives.",
   },
   {
-    title: "Secure AWS serverless lifecycle platform",
-    context: "Scania assignment, 2025-present",
+    title: "Fixed-scope technical projects",
+    context: "Engagement format",
     detail:
-      "Built and improved a secure backend with API Gateway, Lambda, Step Functions, DynamoDB, SNS, and SES for lifecycle operations such as provision, modify, start, stop, and decommission.",
+      "Deliver targeted implementations for cloud foundations, platform improvements, DevOps pipelines, and Infrastructure as Code.",
   },
   {
-    title: "Cross-cloud platform delivery and modernization",
-    context: "Asurgent AB and prior consulting work",
+    title: "Architecture and platform reviews",
+    context: "Engagement format",
     detail:
-      "Delivered infrastructure as code, CI/CD, Azure DDoS protection, baseline monitoring, migration support, and reusable platform automation across AWS and Azure client environments.",
+      "Assess current-state cloud and platform setup, identify risks and bottlenecks, and provide prioritized recommendations with clear implementation paths.",
   },
   {
-    title: "Large-scale migration and change leadership",
-    context: "Capgemini, 2022-2023",
+    title: "Retained advisory support",
+    context: "Engagement format",
     detail:
-      "Led coordination for a sustainable data migration and decommission project moving more than 50 TB of data to cloud storage solutions for an international retailer.",
+      "Provide ongoing senior technical guidance where continuity and long-term technical quality matter.",
   },
 ];
 
 const process: ProcessStep[] = [
   {
     step: "01",
-    title: "Clarify the technical bottleneck",
+    title: "Stronger cloud structure",
     description:
-      "Start with the business goal, delivery pain, and current platform reality so the work targets the real blocker instead of a generic architecture wish list.",
+      "Build clear, repeatable cloud and platform structures that teams can confidently operate and evolve.",
   },
   {
     step: "02",
-    title: "Design the smallest durable solution",
+    title: "Better engineering foundations",
     description:
-      "Define the architecture, workflows, and standards that solve the immediate problem while leaving room for the next phase of growth.",
+      "Improve technical foundations so delivery work is more predictable, maintainable, and scalable.",
   },
   {
     step: "03",
-    title: "Implement with the team",
+    title: "Improved delivery capability",
     description:
-      "Ship the core infrastructure, automation, or backend work hands-on, and strengthen the team around it through clean patterns, documentation, and review.",
+      "Strengthen DevOps practices and platform maturity so teams can ship faster with less friction.",
   },
   {
     step: "04",
-    title: "Stabilize and hand over cleanly",
+    title: "Practical technical guidance",
     description:
-      "Finish with visibility, operational hygiene, and a practical runway so your team can keep shipping without depending on a permanent external layer.",
+      "Provide senior support through focused reviews, scoped implementation, or ongoing advisory engagement.",
   },
 ];
 
 const faq: FaqItem[] = [
   {
-    question: "What kinds of companies are the best fit?",
+    question: "Who is Lidtech AB best suited for?",
     answer:
-      "The strongest fit is a startup or scale-up that already has product momentum but needs a senior operator to tighten architecture, delivery, and platform reliability before complexity compounds.",
+      "Lidtech AB is best suited for companies modernizing cloud usage, teams improving delivery and platform maturity, and organizations needing stronger cloud governance and senior technical support.",
   },
   {
-    question: "Do you stay hands-on or work at advisory level only?",
+    question: "What kind of support can I start with?",
     answer:
-      "Hands-on delivery is core to the offer. Strategy matters, but the work is meant to ship through infrastructure changes, automation, integrations, delivery pipelines, and operational improvements.",
+      "You can start with a focused review or advisory workshop, then expand into fixed-scope implementation or retained advisory support only where it creates real value.",
   },
   {
-    question: "Can you work alongside an existing engineering team?",
+    question: "What areas do you cover?",
     answer:
-      "Yes. Engagements are designed to plug into an existing team, strengthen technical decision-making, and leave behind systems and patterns the internal team can own confidently.",
+      "Core areas include cloud architecture, platform engineering, DevOps and CI/CD, Infrastructure as Code, cloud governance, and technical advisory.",
   },
   {
-    question: "Can you help with cloud governance and security foundations?",
+    question: "How does Lidtech AB work with teams?",
     answer:
-      "Yes. Governance, platform structure, tagging, validation, delivery standards, and secure cloud baselines are a major part of the consulting work, especially in AWS and Azure environments.",
+      "Engagements are designed to be practical and engineering-first, supporting internal teams with clear, maintainable solutions rather than adding unnecessary consulting overhead.",
   },
   {
-    question: "Do you support fixed projects as well as retained advisory work?",
+    question: "What is the overall goal of an engagement?",
     answer:
-      "Both. The site is positioned for scoped architecture and delivery projects, short operational acceleration engagements, and ongoing senior technical advisory support where continuity matters.",
+      "The goal is always to create better systems that help teams move faster with less friction.",
   },
 ];
 
 const socials: SocialLink[] = [
   { label: "LinkedIn", shortLabel: "LI", href: "https://www.linkedin.com/in/oskarlidstrom" },
   { label: "GitHub", shortLabel: "GH", href: "https://github.com/KartDev" },
-  { label: "Email", shortLabel: "@", href: "mailto:oskarlidstrom@gmail.com" },
+  { label: "Email", shortLabel: "@", href: "mailto:contact@lidtech.se" },
 ];
 
 export const siteConfig: SiteConfig = {
-  companyName: "Oskar Lidstrom Consulting",
-  personName: "Oskar Lidstrom",
-  role: "Senior Cloud Architect, DevOps Engineer, and Platform Consultant",
+  companyName: "Lidtech AB",
+  personName: "Lidtech AB",
+  role: "Senior specialist consulting in cloud and platform engineering",
   location: "Stockholm, Sweden",
-  email: "oskarlidstrom@gmail.com",
+  email: "contact@lidtech.se",
   url: "https://kartdev.github.io/Lidtech-website",
-  bookingUrl: "https://calendly.com/oskarlidstrom/introduction-meeting",
+  bookingUrl: "mailto:contact@lidtech.se",
   meta: {
-    title: "Senior Cloud Architecture and DevOps Consulting for Startup Founders",
+    title: "Lidtech AB | Cloud Architecture, Platform Engineering, DevOps, and IaC",
     description:
-      "Senior cloud architecture, DevOps, platform engineering, and AI-ready backend delivery for startups that need hands-on technical execution without the overhead of a larger consultancy.",
+      "Lidtech AB helps organizations build better cloud and platform foundations through senior specialist consulting in cloud architecture, platform engineering, DevOps, Infrastructure as Code, and technical advisory.",
   },
   hero: {
-    eyebrow: "Senior cloud architecture and platform delivery for fast-moving startups",
-    title: "Build the cloud, delivery, and automation layer your product can actually grow on.",
+    eyebrow: "Lidtech AB",
+    title: "Build better cloud and platform foundations.",
     description:
-      "I help startup founders move from technical friction to clean execution across AWS, Azure, CI/CD, backend workflows, and platform foundations, with senior hands-on involvement from the first conversation to the final handover.",
+      "Senior specialist consulting in cloud architecture, platform engineering, DevOps, Infrastructure as Code, and technical advisory. Practical support for teams that want scalable systems, better delivery, and stronger technical foundations.",
     primaryCta: {
-      label: "Book a call",
-      href: "https://calendly.com/oskarlidstrom/introduction-meeting",
+      label: "Book an Intro Call",
+      href: "mailto:contact@lidtech.se",
     },
     secondaryCta: {
-      label: "See selected proof",
-      href: "#proof",
+      label: "Explore Services",
+      href: "#services",
     },
     highlights: [
-      "AWS and Azure architecture",
-      "Infrastructure as code and CI/CD",
-      "Serverless backends and integrations",
-      "Cloud governance and operational automation",
+      "Clear cloud and platform architecture",
+      "Repeatable and maintainable delivery foundations",
+      "Secure and scalable technical systems",
+      "Practical technical advisory and implementation support",
     ],
   },
   navItems: [
     { label: "Services", href: "#services" },
-    { label: "Why me", href: "#why" },
-    { label: "Proof", href: "#proof" },
+    { label: "Why Lidtech AB", href: "#why" },
+    { label: "Engagements", href: "#proof" },
     { label: "About", href: "#about" },
-    { label: "Process", href: "#process" },
+    { label: "How We Help", href: "#process" },
     { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "#contact" },
   ],
@@ -205,9 +238,9 @@ export const siteConfig: SiteConfig = {
   valueProps,
   proof,
   about: [
-    "I am a Stockholm-based cloud architect and DevOps engineer with more than six years of experience delivering cloud platforms, backend services, governance models, and operational automation across AWS and Azure.",
-    "Recent work includes CAF-based Azure architecture for public-sector requirements, secure serverless lifecycle platforms for enterprise environments, and cloud modernization efforts spanning infrastructure as code, CI/CD, monitoring, and migration support.",
-    "That mix matters for startups: you get practical execution speed, but the systems are designed with the reliability, observability, and governance discipline that prevent expensive cleanup later.",
+    "Lidtech AB helps organizations design, improve, and operate modern cloud and platform capabilities.",
+    "The focus is on building systems that are clear, repeatable, secure, scalable, and maintainable across cloud architecture, platform engineering, DevOps and CI/CD, Infrastructure as Code, cloud governance, and technical advisory.",
+    "Lidtech AB helps teams build stronger technical foundations so they can deliver faster, operate more reliably, and scale with less friction.",
   ],
   process,
   faq,
