@@ -89,7 +89,7 @@ const valueProps: ValuePropItem[] = [
   {
     title: "Practical, engineering-first consulting",
     description:
-      "Lidtech AB focuses on solutions that work in the real world, not just slide decks and abstract recommendations.",
+      "Lidtech focuses on solutions that work in the real world, not just slide decks and abstract recommendations.",
   },
   {
     title: "Senior specialist support",
@@ -159,9 +159,9 @@ const process: ProcessStep[] = [
 
 const faq: FaqItem[] = [
   {
-    question: "Who is Lidtech AB best suited for?",
+    question: "Who is Lidtech best suited for?",
     answer:
-      "Lidtech AB is best suited for companies modernizing cloud usage, teams improving delivery and platform maturity, and organizations needing stronger cloud governance and senior technical support.",
+      "Lidtech is best suited for companies modernizing cloud usage, teams improving delivery and platform maturity, and organizations needing stronger cloud governance and senior technical support.",
   },
   {
     question: "What kind of support can I start with?",
@@ -174,7 +174,7 @@ const faq: FaqItem[] = [
       "Core areas include cloud architecture, platform engineering, DevOps and CI/CD, Infrastructure as Code, cloud governance, and technical advisory.",
   },
   {
-    question: "How does Lidtech AB work with teams?",
+    question: "How does Lidtech work with teams?",
     answer:
       "Engagements are designed to be practical and engineering-first, supporting internal teams with clear, maintainable solutions rather than adding unnecessary consulting overhead.",
   },
@@ -192,20 +192,20 @@ const socials: SocialLink[] = [
 ];
 
 export const siteConfig: SiteConfig = {
-  companyName: "Lidtech AB",
-  personName: "Lidtech AB",
+  companyName: "Lidtech",
+  personName: "Lidtech",
   role: "Senior specialist consulting in cloud and platform engineering",
   location: "Stockholm, Sweden",
   email: "contact@lidtech.se",
   url: "https://kartdev.github.io/Lidtech-website",
   bookingUrl: "mailto:contact@lidtech.se",
   meta: {
-    title: "Lidtech AB | Cloud Architecture, Platform Engineering, DevOps, and IaC",
+    title: "Lidtech | Cloud Architecture, Platform Engineering, DevOps, and IaC",
     description:
-      "Lidtech AB helps organizations build better cloud and platform foundations through senior specialist consulting in cloud architecture, platform engineering, DevOps, Infrastructure as Code, and technical advisory.",
+      "Lidtech helps organizations build better cloud and platform foundations through senior specialist consulting in cloud architecture, platform engineering, DevOps, Infrastructure as Code, and technical advisory.",
   },
   hero: {
-    eyebrow: "Lidtech AB",
+    eyebrow: "Lidtech",
     title: "Build better cloud and platform foundations.",
     description:
       "Senior specialist consulting in cloud architecture, platform engineering, DevOps, Infrastructure as Code, and technical advisory. Practical support for teams that want scalable systems, better delivery, and stronger technical foundations.",
@@ -226,7 +226,7 @@ export const siteConfig: SiteConfig = {
   },
   navItems: [
     { label: "Services", href: "#services" },
-    { label: "Why Lidtech AB", href: "#why" },
+    { label: "Why Lidtech", href: "#why" },
     { label: "Engagements", href: "#proof" },
     { label: "About", href: "#about" },
     { label: "How We Help", href: "#process" },
@@ -238,9 +238,9 @@ export const siteConfig: SiteConfig = {
   valueProps,
   proof,
   about: [
-    "Lidtech AB helps organizations design, improve, and operate modern cloud and platform capabilities.",
+    "Lidtech helps organizations design, improve, and operate modern cloud and platform capabilities.",
     "The focus is on building systems that are clear, repeatable, secure, scalable, and maintainable across cloud architecture, platform engineering, DevOps and CI/CD, Infrastructure as Code, cloud governance, and technical advisory.",
-    "Lidtech AB helps teams build stronger technical foundations so they can deliver faster, operate more reliably, and scale with less friction.",
+    "Lidtech helps teams build stronger technical foundations so they can deliver faster, operate more reliably, and scale with less friction.",
   ],
   process,
   faq,

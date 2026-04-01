@@ -129,7 +129,7 @@ export default function HomePage() {
                 width={517}
               />
             </div>
-            <p className="hero-panel-label">What Lidtech AB helps with</p>
+            <p className="hero-panel-label">What Lidtech helps with</p>
           </div>
           <ul className="hero-panel-list">
             <li>Creating stronger cloud structure and governance</li>
@@ -158,7 +158,7 @@ export default function HomePage() {
         id="services"
         eyebrow="Services"
         title="Services overview for modern cloud and platform capabilities."
-        description="Lidtech AB helps organizations design, improve, and operate cloud and platform systems that are clear, repeatable, secure, scalable, and maintainable."
+        description="Lidtech helps organizations design, improve, and operate cloud and platform systems that are clear, repeatable, secure, scalable, and maintainable."
       >
         <div className="card-grid card-grid-services">
           {siteConfig.services.map((service, index) => (
@@ -185,9 +185,9 @@ export default function HomePage() {
 
       <Section
         id="why"
-        eyebrow="Why Lidtech AB"
+        eyebrow="Why Lidtech"
         title="Practical specialist support built for long-term technical value."
-        description="Lidtech AB focuses on engineering-first outcomes that improve delivery capability, cloud structure, and technical quality without unnecessary complexity."
+        description="Lidtech focuses on engineering-first outcomes that improve delivery capability, cloud structure, and technical quality without unnecessary complexity."
         tone="muted"
       >
         <div className="card-grid card-grid-value">
@@ -208,7 +208,7 @@ export default function HomePage() {
         id="proof"
         eyebrow="Engagement Formats"
         title="Start focused and expand only where it creates real value."
-        description="Lidtech AB typically works through advisory workshops, fixed-scope projects, architecture and platform reviews, and retained advisory support."
+        description="Lidtech typically works through advisory workshops, fixed-scope projects, architecture and platform reviews, and retained advisory support."
       >
         <div className="card-grid card-grid-proof">
           {siteConfig.proof.map((item, index) => (
@@ -228,8 +228,8 @@ export default function HomePage() {
       <Section
         id="about"
         eyebrow="About"
-        title="What Lidtech AB does."
-        description="Lidtech AB helps teams build stronger technical foundations so they can deliver faster, operate more reliably, and scale with less friction."
+        title="What Lidtech does."
+        description="Lidtech helps teams build stronger technical foundations so they can deliver faster, operate more reliably, and scale with less friction."
         tone="muted"
       >
         <div className="about-layout">
@@ -258,9 +258,9 @@ export default function HomePage() {
 
       <Section
         id="process"
-        eyebrow="How Lidtech AB Helps"
+        eyebrow="How Lidtech Helps"
         title="Support designed for stronger structure, delivery, and platform maturity."
-        description="Lidtech AB is designed for organizations that need practical technical guidance with measurable engineering outcomes."
+        description="Lidtech is designed for organizations that need practical technical guidance with measurable engineering outcomes."
         tone="accent"
       >
         <div className="process-grid">
@@ -350,7 +350,7 @@ export default function HomePage() {
       </Section>
 
       <footer className="site-footer">
-        <p>&copy; 2026 Lidtech AB</p>
+        <p>&copy; 2026 Lidtech</p>
         <div className="footer-links">
           {siteConfig.socials.map((link) => (
             <a href={link.href} key={link.label} rel="noreferrer" target="_blank">
