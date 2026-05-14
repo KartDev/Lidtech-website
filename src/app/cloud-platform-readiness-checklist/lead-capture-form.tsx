@@ -18,8 +18,9 @@ export default function LeadCaptureForm({
   return (
     <form
       action={checklistConfig.form.action}
-      className={`lead-capture-form lead-capture-form-${variant}${className ? ` ${className}` : ""}`}
+      className={`lead-capture-form lead-capture-form-${variant} ml-block-form${className ? ` ${className}` : ""}`}
       method="post"
+      target="_blank"
     >
       {heading ? <h3>{heading}</h3> : null}
 
@@ -37,7 +38,14 @@ export default function LeadCaptureForm({
 
         <label className="lead-field">
           <span className="lead-field-label">Work email</span>
-          <input autoComplete="email" inputMode="email" name="email" placeholder="Work email" required type="email" />
+          <input
+            autoComplete="email"
+            inputMode="email"
+            name="fields[email]"
+            placeholder="Work email"
+            required
+            type="email"
+          />
         </label>
       </div>
 
