@@ -1,9 +1,14 @@
 import type { NextConfig } from "next";
 
-const githubPagesBasePath = "/Lidtech-website";
-const basePath =
-  process.env.NEXT_PUBLIC_BASE_PATH ??
-  (process.env.NODE_ENV === "production" ? githubPagesBasePath : "");
+function normalizeBasePath(value: string | undefined) {
+  if (!value || value === "/") {
+    return "";
+  }
+
+  return value.endsWith("/") ? value.slice(0, -1) : value;
+}
+
+const basePath = normalizeBasePath(process.env.NEXT_PUBLIC_BASE_PATH);
 
 const nextConfig: NextConfig = {
   output: "export",
