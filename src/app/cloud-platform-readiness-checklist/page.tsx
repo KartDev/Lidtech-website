@@ -83,7 +83,7 @@ export default function CloudPlatformReadinessChecklistPage() {
           <a className="lead-page-home-link" href="/">
             Back to main site
           </a>
-          <ActionButton href={`mailto:${siteConfig.email}`} label="Ask a question" variant="ghost" />
+          <ActionButton href={siteConfig.bookingUrl} label="Book an Intro Call" variant="ghost" />
         </div>
       </header>
 
@@ -103,13 +103,10 @@ export default function CloudPlatformReadinessChecklistPage() {
           </div>
         </div>
 
-        <aside className="lead-form-card reveal reveal-delay-2">
+        <aside className="lead-form-card reveal reveal-delay-2" id="checklist-signup">
           <p className="lead-form-card-eyebrow">Free download request</p>
-          <LeadCaptureForm
-            buttonLabel={checklistConfig.form.buttonLabel}
-            heading={checklistConfig.form.heading}
-            sourceLabel="hero-form"
-          />
+          <p className="lead-form-intro">{checklistConfig.form.intro}</p>
+          <LeadCaptureForm heading={checklistConfig.form.heading} submitLabel={checklistConfig.form.buttonLabel} />
         </aside>
       </section>
 
@@ -173,14 +170,7 @@ export default function CloudPlatformReadinessChecklistPage() {
           <p className="section-description">{checklistConfig.closingCta.description}</p>
         </div>
 
-        <LeadCaptureForm
-          buttonLabel={checklistConfig.form.compactButtonLabel}
-          className="lead-bottom-form"
-          note={checklistConfig.form.note}
-          showName={false}
-          sourceLabel="bottom-form"
-          variant="inline"
-        />
+        <LeadCaptureForm className="lead-bottom-form" note={checklistConfig.form.note} submitLabel={checklistConfig.form.compactButtonLabel} variant="inline" />
       </section>
 
       <footer className="site-footer lead-page-footer">

@@ -198,7 +198,7 @@ export const siteConfig: SiteConfig = {
   location: "Stockholm, Sweden",
   email: "contact@lidtech.se",
   url: "https://lidtech.se",
-  bookingUrl: "mailto:contact@lidtech.se",
+  bookingUrl: "https://calendly.com/oskar-lidtech/introduction",
   meta: {
     title: "Lidtech | Cloud Architecture, Platform Engineering, DevOps, and IaC",
     description:
@@ -211,7 +211,7 @@ export const siteConfig: SiteConfig = {
       "Senior specialist consulting in cloud architecture, platform engineering, DevOps, Infrastructure as Code, and technical advisory. Practical support for teams that want scalable systems, better delivery, and stronger technical foundations.",
     primaryCta: {
       label: "Book an Intro Call",
-      href: "mailto:contact@lidtech.se",
+      href: "https://calendly.com/oskar-lidtech/introduction",
     },
     secondaryCta: {
       label: "Explore Services",
