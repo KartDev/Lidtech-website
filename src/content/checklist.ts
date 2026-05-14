@@ -20,15 +20,7 @@ export const checklistConfig = {
     { value: "30 min", label: "typical completion time" },
   ],
   form: {
-    action:
-      "https://assets.mailerlite.com/jsonp/2348072/forms/187449423478916726/subscribe",
     resourceName: "Cloud Platform Readiness Checklist",
-    heading: "Get the checklist",
-    buttonLabel: "Send me the checklist ->",
-    compactButtonLabel: "Send it ->",
-    intro:
-      "Join the list to get the free checklist and future practical resources on cloud foundations, platform engineering, and delivery maturity.",
-    note: "Free. No spam. Unsubscribe any time.",
   },
   sectionHeading: {
     eyebrow: "What's inside",
