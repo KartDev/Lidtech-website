@@ -231,7 +231,7 @@ export const siteConfig: SiteConfig = {
     { label: "About", href: "#about" },
     { label: "How We Help", href: "#process" },
     { label: "FAQ", href: "#faq" },
-    { label: "Free Checklist", href: "/cloud-platform-readiness-checklist" },
+    { label: "Checklist", href: "/cloud-platform-readiness-checklist" },
     { label: "Contact", href: "#contact" },
   ],
   stats,
