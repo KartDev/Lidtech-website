@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { siteConfig } from "@/content/site";
@@ -352,6 +353,7 @@ export default function HomePage() {
       <footer className="site-footer">
         <p>&copy; 2026 Lidtech</p>
         <div className="footer-links">
+          <Link href="/privacy/">Privacy policy</Link>
           {siteConfig.socials.map((link) => (
             <a href={link.href} key={link.label} rel="noreferrer" target="_blank">
               {link.label}

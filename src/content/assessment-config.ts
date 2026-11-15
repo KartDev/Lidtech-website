@@ -4,11 +4,8 @@ export const assessmentConfig = {
   slug: "/assessment",
   storageKey: "lidtech-cpr-assessment-v1",
 
-  /**
-   * TODO(Oskar): URL of the published privacy policy page.
-   * The email gate stays disabled in production builds until this is set.
-   */
-  privacyPolicyUrl: null as string | null,
+  /** Privacy policy page. The email gate stays disabled in production builds if this is null. */
+  privacyPolicyUrl: "/privacy/" as string | null,
 
   /** TODO(Oskar): Lemon Squeezy checkout URL for Cloud Platform Readiness Checklist Pro. */
   proUrl: null as string | null,

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 
 import { assessmentConfig } from "@/content/assessment-config";
@@ -238,9 +239,9 @@ export default function AssessmentApp() {
               <p className="assessment-consent">
                 {assessmentConfig.consentText}{" "}
                 {assessmentConfig.privacyPolicyUrl ? (
-                  <a href={assessmentConfig.privacyPolicyUrl} rel="noreferrer" target="_blank">
+                  <Link href={assessmentConfig.privacyPolicyUrl} rel="noreferrer" target="_blank">
                     Privacy policy
-                  </a>
+                  </Link>
                 ) : (
                   <strong>[TODO: privacy policy link]</strong>
                 )}

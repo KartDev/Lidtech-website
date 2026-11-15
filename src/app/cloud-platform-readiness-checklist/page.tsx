@@ -200,6 +200,7 @@ export default function CloudPlatformReadinessChecklistPage() {
           <p>&copy; 2026 {siteConfig.companyName}</p>
           <div className="footer-links">
             <Link href="/">Main site</Link>
+          <Link href="/privacy/">Privacy policy</Link>
             {siteConfig.socials.map((link) => (
               <a href={link.href} key={link.label} rel="noreferrer" target="_blank">
                 {link.label}
