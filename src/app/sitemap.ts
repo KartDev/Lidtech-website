@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 
+import { assessmentConfig } from "@/content/assessment-config";
 import { checklistConfig } from "@/content/checklist";
 import { siteConfig } from "@/content/site";
 
@@ -18,6 +19,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
+    },
+    {
+      url: new URL(`${assessmentConfig.slug}/`, `${siteConfig.url}/`).toString(),
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: new URL("/privacy/", `${siteConfig.url}/`).toString(),
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
     },
   ];
 }

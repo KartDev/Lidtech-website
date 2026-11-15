@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Script from "next/script";
 
+import { assessmentConfig } from "@/content/assessment-config";
 import { checklistConfig } from "@/content/checklist";
 import { siteConfig } from "@/content/site";
 
@@ -21,6 +23,23 @@ function ActionButton({
   variant?: "primary" | "secondary" | "ghost";
 }) {
   const external = isExternalLink(href);
+  const content = (
+    <>
+      <span>{label}</span>
+      <span aria-hidden="true" className="button-arrow">
+        -&gt;
+      </span>
+    </>
+  );
+
+  // Internal routes go through next/link so the GitHub Pages base path is applied.
+  if (href.startsWith("/")) {
+    return (
+      <Link className={`button button-${variant}`} href={href}>
+        {content}
+      </Link>
+    );
+  }
 
   return (
     <a
@@ -29,10 +48,7 @@ function ActionButton({
       rel={external ? "noreferrer" : undefined}
       target={external ? "_blank" : undefined}
     >
-      <span>{label}</span>
-      <span aria-hidden="true" className="button-arrow">
-        -&gt;
-      </span>
+      {content}
     </a>
   );
 }
@@ -76,18 +92,18 @@ export default function CloudPlatformReadinessChecklistPage() {
 
       <main className="lead-page-shell" id="main-content">
         <header className="lead-page-header">
-          <a className="brand-mark" href="/">
+          <Link className="brand-mark" href="/">
             <span className="brand-mark-monogram">OL</span>
             <span className="brand-mark-copy">
               <strong>{siteConfig.companyName}</strong>
               <span>{siteConfig.role}</span>
             </span>
-          </a>
+          </Link>
 
           <div className="lead-page-header-actions">
-            <a className="lead-page-home-link" href="/">
+            <Link className="lead-page-home-link" href="/">
               Back to main site
-            </a>
+            </Link>
             <ActionButton href={siteConfig.bookingUrl} label="Book an Intro Call" variant="ghost" />
           </div>
         </header>
@@ -175,7 +191,7 @@ export default function CloudPlatformReadinessChecklistPage() {
           </div>
 
           <div className="lead-bottom-actions">
-            <ActionButton href="#checklist-signup" label="Get the checklist" />
+            <ActionButton href={`${assessmentConfig.slug}/`} label="Get the checklist" />
             <ActionButton href={siteConfig.bookingUrl} label="Book an Intro Call" variant="secondary" />
           </div>
         </section>
@@ -183,7 +199,8 @@ export default function CloudPlatformReadinessChecklistPage() {
         <footer className="site-footer lead-page-footer">
           <p>&copy; 2026 {siteConfig.companyName}</p>
           <div className="footer-links">
-            <a href="/">Main site</a>
+            <Link href="/">Main site</Link>
+          <Link href="/privacy/">Privacy policy</Link>
             {siteConfig.socials.map((link) => (
               <a href={link.href} key={link.label} rel="noreferrer" target="_blank">
                 {link.label}
