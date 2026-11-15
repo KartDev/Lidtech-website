@@ -102,7 +102,7 @@ export const checklistConfig = {
   },
   closingCta: {
     eyebrow: "Ready to review your platform?",
-    title: "Get the checklist and pressure-test the foundations before they slow the team down.",
+    title: "Take the assessment and pressure-test the foundations before they slow the team down.",
     description:
       "Use it as a self-assessment, bring it into an internal review, or use it as the starting point for a deeper advisory conversation.",
   },

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
 
 import { assessmentConfig } from "@/content/assessment-config";
 import { checklistConfig } from "@/content/checklist";
@@ -86,10 +85,6 @@ export const metadata: Metadata = {
 export default function CloudPlatformReadinessChecklistPage() {
   return (
     <>
-      <Script id="mailerlite-universal" strategy="afterInteractive">
-        {`(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');ml('account', '2348072');`}
-      </Script>
-
       <main className="lead-page-shell" id="main-content">
         <header className="lead-page-header">
           <Link className="brand-mark" href="/">
@@ -125,8 +120,18 @@ export default function CloudPlatformReadinessChecklistPage() {
           </div>
 
           <aside className="lead-form-card reveal reveal-delay-2" id="checklist-signup">
-            <p className="lead-form-card-eyebrow">Free download request</p>
-            <div className="ml-embedded lead-mailerlite-embed" data-form="7XJPTU"></div>
+            <p className="lead-form-card-eyebrow">Free self-assessment</p>
+            <h2 className="lead-form-card-title">Score your platform online</h2>
+            <ul className="lead-form-card-list">
+              <li>55 questions across 11 areas, one section per screen</li>
+              <li>Section scores, an overall maturity band and your three weakest areas</li>
+              <li>Results on screen and in your inbox</li>
+            </ul>
+            <ActionButton href={`${assessmentConfig.slug}/`} label="Start the assessment" />
+            <p className="lead-form-card-note">
+              Your answers stay in your browser until you ask for your results.{" "}
+              <Link href="/privacy/">Privacy policy</Link>
+            </p>
           </aside>
         </section>
 
@@ -191,7 +196,7 @@ export default function CloudPlatformReadinessChecklistPage() {
           </div>
 
           <div className="lead-bottom-actions">
-            <ActionButton href={`${assessmentConfig.slug}/`} label="Get the checklist" />
+            <ActionButton href={`${assessmentConfig.slug}/`} label="Start the assessment" />
             <ActionButton href={siteConfig.bookingUrl} label="Book an Intro Call" variant="secondary" />
           </div>
         </section>
