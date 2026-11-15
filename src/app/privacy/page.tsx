@@ -68,10 +68,10 @@ export default function PrivacyPage() {
             scores.
           </p>
 
-          <h3>Checklist sign-up form</h3>
+          <h3>Earlier checklist sign-ups</h3>
           <p>
-            If you request the checklist through the form on the checklist page, we receive your name and email
-            address and use them to send you the checklist and occasional emails from Lidtech AB.
+            If you requested the checklist through our earlier sign-up form, we hold your name and email address and
+            use them to send you occasional emails from Lidtech AB.
           </p>
 
           <h3>Email contact and booked calls</h3>
@@ -97,8 +97,7 @@ export default function PrivacyPage() {
           <ul>
             <li>
               <strong>MailerLite</strong> stores our email list, including the names, email addresses and assessment
-              scores described above, and sends our emails. The MailerLite script on the checklist page also stores a
-              random identifier in your browser&apos;s local storage. See{" "}
+              scores described above, and sends our emails. See{" "}
               <a href="https://www.mailerlite.com/legal/privacy-policy" rel="noreferrer" target="_blank">
                 MailerLite&apos;s privacy policy
               </a>
