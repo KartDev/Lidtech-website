@@ -14,10 +14,12 @@ export const assessmentConfig = {
 
   mailerLite: {
     /**
-     * Form action from the "HTML code" embed of form 7XJPTU (account 2348072).
-     * If a new form is created for the assessment, replace this with that form's action URL.
+     * Action URL from the "HTML code" embed of the "CPR Assessment (site)" form (account 2348072).
+     * This form carries the cpr_* fields and adds subscribers to the "CPR Assessment" group, which
+     * triggers the results email. It is never rendered; this page posts to it directly.
+     * Do not use the landing-page form 7XJPTU here: it has only name and email.
      */
-    formAction: "https://assets.mailerlite.com/jsonp/2348072/forms/187449423478916726/subscribe",
+    formAction: "https://assets.mailerlite.com/jsonp/2348072/forms/204218347895654215/subscribe",
   },
 
   consentText:
